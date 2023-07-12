@@ -9,5 +9,7 @@ def hello_world():
         return 'Hello, World!'
 
     elif request.method == 'POST':
+        update = request.get_json()
+        print(update)
         return 'Got a POST request!'
 
