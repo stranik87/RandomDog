@@ -1,6 +1,7 @@
 from flask import Flask, request
 
-from telegram import Bot, Dispatcher, Update
+from telegram import Bot, Update
+from telegram.ext import Dispatcher, CommandHandler, MessageHandler, Filters
 from handlers import start, help, echo
 
 import os
